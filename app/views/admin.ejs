@@ -1,0 +1,38 @@
+<%- include('partials/header') %>
+
+<h3 class="text-center">Bienvenu dans l'espace admin</h3>
+
+<div class="profile-form-btn">
+	<form action="/admin/addTag" method="GET" class="form-modify">
+		<div class="form-group text-center">
+			<button type="submit" class="btn btn-primary">Ajouter un tag</button>
+		</div>
+	</form>
+	<form action="/admin/tagDelete" method="GET" class="form-modify">
+		<div class="form-group text-center">
+			<button type="submit" class="btn btn-danger">Supprimer un tag</button>
+		</div>
+	</form>
+</div>
+<div class="profile-form-btn">
+	<form action="/admin/tagUpdate" method="GET" class="form-modify">
+		<div class="form-group text-center">
+			<button type="submit" class="btn btn-primary">Modifier un tag</button>
+		</div>
+	</form>
+	<form action="/admin/tagAssociation" method="GET" class="form-modify">
+		<div class="form-group text-center">
+			<button type="submit" class="btn btn-primary">
+				Ajouter un quizz à un Tag
+			</button>
+		</div>
+	</form>
+	<form action="/admin/tagDeassociation" method="GET" class="form-modify">
+		<div class="form-group text-center">
+			<button type="submit" class="btn btn-danger">
+				Supprimer un quizz à un Tag
+			</button>
+		</div>
+	</form>
+</div>
+<%- include('partials/footer') %>

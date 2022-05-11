@@ -1,0 +1,32 @@
+<%- include('partials/header') %>
+
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+	<h2 class="h1 display-4">Vos Informations : <%= uuser.fullname %></h2>
+</div>
+<div class="profile-form">
+	<div class="profile-form-lastname">
+		<p>Nom : <%= uuser.lastname %></p>
+	</div>
+
+	<div class="profile-form-firstname">
+		<p>Prénom : <%= uuser.firstname %></p>
+	</div>
+
+	<div class="profile-form-email">
+		<p>Email : <%= uuser.email %></p>
+	</div>
+</div>
+<div class="profile-form-btn">
+	<form action="/profil/update" method="GET" class="form-modify">
+		<div class="form-group text-center">
+			<button type="submit" class="btn btn-primary">Modifier le profil</button>
+		</div>
+	</form>
+	<form action="/delete" method="POST" class="form-delete">
+		<div class="form-group text-center">
+			<button type="submit" class="btn btn-danger">Supprimer le compte</button>
+		</div>
+	</form>
+</div>
+
+<%- include('partials/footer') %>

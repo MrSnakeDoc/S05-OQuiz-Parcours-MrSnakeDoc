@@ -1,0 +1,14 @@
+<%- include('partials/header') %>
+
+	<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+		<h2 class="h1 display-4">S'inscrire sur O'Quiz</h2>
+		<p class="lead">Inscrivez vous pour profiter des quizz !</p>
+	</div>
+	<div class="error-container text-center">
+		<div class="error-email">
+			<h4>L'adresse e-mail est déjà utilisée</h4>
+ 			<p>Vous avez indiqué que vous êtes un nouveau client, mais un compte existe déjà avec l'adresse email <strong><%= email %></strong></p>
+		</div>
+	</div>
+</form>
+<%- include('partials/footer') %>
